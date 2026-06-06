@@ -13,6 +13,11 @@ _Memória persistente do projeto: decisões, bloqueios, lições, TODOs, ideias 
 | D-03 | Storybook para documentação | Sandbox visual + documentação viva sem custo de site separado | 2026-06-06 |
 | D-04 | Node.js >= 22.12.0 como requisito mínimo | Alinhado com LTS mais recente; sem suporte a versões antigas | 2026-06-06 |
 | D-05 | React >= 17 como requisito mínimo | Suporte a projetos legados que ainda usam React 17 | 2026-06-06 |
+| D-06 | Pacote scoped como `@diego-af/lib-dieguin` | Necessário para GitHub Packages (scoped packages) | 2026-06-06 |
+| D-07 | Repositório GitHub: `diego-af/lib` | Define remote oficial do projeto | 2026-06-06 |
+| D-08 | Branch padrão renomeada para `main` | Padrão atual do GitHub | 2026-06-06 |
+| D-09 | tsup como bundler (esbuild) | Zero-config, rápido, suporta ESM+CJS+dts | 2026-06-06 |
+| D-10 | Single-package (sem monorepo) | Adequado para v1; monorepo adiciona complexidade desnecessária | 2026-06-06 |
 
 ---
 
@@ -30,9 +35,9 @@ _(nenhuma registrada ainda)_
 
 ## Todos
 
-- [ ] Definir repositório GitHub (org ou usuário pessoal)
-- [ ] Decidir entre tsup e rollup como bundler
-- [ ] Avaliar necessidade de monorepo (turborepo) para separar lib do playground
+- [x] Definir repositório GitHub → `diego-af/lib`
+- [x] Decidir entre tsup e rollup → tsup
+- [x] Avaliar necessidade de monorepo → não, single-package para v1
 
 ---
 
