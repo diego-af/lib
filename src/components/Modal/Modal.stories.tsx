@@ -25,12 +25,19 @@ export const Playground: Story = {
 
 export const WithButton: Story = {
   render: () => {
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const [open, setOpen] = useState(false)
+    // eslint-disable-next-line react-hooks/rules-of-hooks
     const toggle = useCallback(() => setOpen((v) => !v), [])
     return (
       <>
         <Button onClick={toggle}>Open Modal</Button>
-        <Modal isOpen={open} onClose={() => setOpen(false)} title="Example Modal" footer={<Button onClick={() => setOpen(false)}>Close</Button>}>
+        <Modal
+          isOpen={open}
+          onClose={() => setOpen(false)}
+          title="Example Modal"
+          footer={<Button onClick={() => setOpen(false)}>Close</Button>}
+        >
           <p>This is an example modal with a title, body content, and a footer.</p>
         </Modal>
       </>
